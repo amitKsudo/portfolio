@@ -33,13 +33,18 @@
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
+            flex-wrap: nowrap; /* Prevent wrapping */
+        }
+        .navbar nav {
+            display: flex; /* Use flexbox for navigation links */
         }
         .navbar a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px; /* Reduce margin for better fit */
             font-size: 1em;
             transition: color 0.3s;
+            white-space: nowrap; /* Prevent text wrap */
         }
         .navbar a:hover {
             color: #00ff00;
