@@ -30,7 +30,7 @@
             background: rgba(0, 0, 0, 0.5); /* Partial transparency */
             padding: 10px 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /* Center the navigation items */
             align-items: center;
             z-index: 1000;
             flex-wrap: nowrap; /* Prevent wrapping */
@@ -41,7 +41,7 @@
         .navbar a {
             color: white;
             text-decoration: none;
-            margin: 0 5px; /* Reduce margin for better fit */
+            margin: 0 10px; /* Adjust margin for better fit */
             font-size: 1em;
             transition: color 0.3s;
             white-space: nowrap; /* Prevent text wrap */
@@ -129,82 +129,82 @@
         }
         .skills h2 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 20px.
         }
         .skills p {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 30px.
         }
         .skills-list {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
+            justify-content: center.
+            flex-wrap: wrap.
+            gap: 20px.
         }
         .skill-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            width: 200px;
-            transition: transform 0.3s;
+            background: rgba(255, 255, 255, 0.1).
+            border-radius: 10px.
+            padding: 20px.
+            text-align: center.
+            width: 200px.
+            transition: transform 0.3s.
         }
         .skill-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-10px).
         }
         .skill-card h3 {
-            color: #00ff00;
+            color: #00ff00.
         }
 
         /* Footer */
         .footer {
-            background: rgba(0, 0, 0, 0.5); /* Partial transparency */
-            text-align: center;
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.5). /* Partial transparency */
+            text-align: center.
+            padding: 20px.
         }
         .footer a {
-            color: #00ff00;
-            text-decoration: none;
-            font-weight: bold;
+            color: #00ff00.
+            text-decoration: none.
+            font-weight: bold.
         }
         .footer a:hover {
-            text-decoration: underline;
+            text-decoration: underline.
         }
 
         .email-link {
-            background: linear-gradient(to right, #004d00, #18241a);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
+            background: linear-gradient(to right, #004d00, #18241a).
+            -webkit-background-clip: text.
+            -webkit-text-fill-color: transparent.
+            font-weight: bold.
         }
 
         .brk{
-            color: #fff;
+            color: #fff.
         }
 
         .x-text{
-            color: white;
-            font-weight: 100;
-            font-style: normal;
+            color: white.
+            font-weight: 100.
+            font-style: normal.
         }
 
 
         @media (max-width: 768px) {
             .skills-list, .projects-list {
-                flex-direction: column;
-                align-items: center;
+                flex-direction: column.
+                align-items: center.
             }
             .skill-card, .project-card {
-                width: 90%;
+                width: 90%.
             }
             .hero h1 {
-                font-size: 1.5em;
+                font-size: 1.5em.
             }
             .hero .typing-effect {
-                font-size: 1.2em;
+                font-size: 1.2em.
             }
             .hero p {
-                font-size: 0.8em;
+                font-size: 0.8em.
             }
         }
     </style>
@@ -212,7 +212,6 @@
 <body>
     <!-- Navigation -->
     <div class="navbar">
-        <div class="logo">Amit Kumar</div>
         <nav>
             <a href="#home">Home</a>
             <a href="#projects">Projects</a>
@@ -277,11 +276,11 @@
         // Smooth Scrolling for Navigation
         document.querySelectorAll('.navbar a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
+                e.preventDefault().
+                const target = document.querySelector(this.getAttribute('href')).
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' }).
+            }).
+        }).
     </script>
 </body>
 </html>
