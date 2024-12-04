@@ -28,7 +28,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
             padding: 10px 15px;
             display: flex;
             justify-content: space-between;
@@ -82,21 +82,97 @@
             to { border-color: transparent; }
         }
 
+        .hero p {
+            font-size: 0.9em;
+        }
+        .hero .description {
+            margin-top: 15px;
+            font-size: 1em;
+            color: #00ff00;
+        }
+
         /* Projects Section */
         .projects {
             padding: 40px 20px;
+        }
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .projects p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .projects-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .project-card a {
+            color: #00ff00;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
         }
 
         /* Skills Section */
         .skills {
             padding: 40px 20px;
         }
+        .skills h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .skills p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skill-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            transition: transform 0.3s;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+        .skill-card h3 {
+            color: #00ff00;
+        }
 
         /* Footer */
         .footer {
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
             text-align: center;
             padding: 20px;
+        }
+        .footer a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
 
         /* Responsive Design */
@@ -116,6 +192,13 @@
             }
             .hero .typing-effect {
                 font-size: 1.2em;
+            }
+            .skills-list, .projects-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            .skill-card, .project-card {
+                width: 90%;
             }
         }
     </style>
@@ -144,6 +227,7 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <h2>Projects</h2>
+        <p>Explore my latest projects showcasing my skills and creativity.</p>
         <div class="projects-list">
             <div class="project-card">
                 <a href="https://bgremover.amitt.tech" target="_blank">Background Eraser</a>
@@ -154,18 +238,23 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <h2>Skills</h2>
+        <p>Technologies and tools I use to craft amazing experiences.</p>
         <div class="skills-list">
             <div class="skill-card">
                 <h3>HTML, CSS, JS</h3>
+                <p>Responsive, interactive web pages.</p>
             </div>
             <div class="skill-card">
                 <h3>Python</h3>
+                <p>Backend development and scripting.</p>
             </div>
             <div class="skill-card">
                 <h3>Django</h3>
+                <p>Scalable web applications.</p>
             </div>
             <div class="skill-card">
                 <h3>SQL</h3>
+                <p>Database management and querying.</p>
             </div>
         </div>
     </section>
